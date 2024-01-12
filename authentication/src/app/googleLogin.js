@@ -2,7 +2,6 @@ import { GoogleAuthProvider, signInWithPopup } from "https://www.gstatic.com/fir
 import { auth } from "./firebase.js";
 import { showMessage } from "./showMessage.js";
 
-
 const googleButton = document.querySelector("#googleLogin");
 
 googleButton.addEventListener("click", async (e) => {

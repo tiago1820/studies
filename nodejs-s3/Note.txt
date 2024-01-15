@@ -1,6 +1,6 @@
 https://www.youtube.com/watch?v=sDVRyFaoI8s
 
-continue: 39.22
+continue: 53.00
 https://github.com/fazt/nodejs-s3-example/blob/master/index.js
 
 

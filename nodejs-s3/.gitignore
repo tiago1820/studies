@@ -3,3 +3,4 @@ Notes.txt
 uploads
 .env
 package-lock.json
+.gitignore

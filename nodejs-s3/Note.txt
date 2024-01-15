@@ -1,0 +1,11 @@
+https://www.youtube.com/watch?v=sDVRyFaoI8s
+
+continue: 39.22
+https://github.com/fazt/nodejs-s3-example/blob/master/index.js
+
+
+
+
+ID: key-03d95e4efe08896cc
+
+Huella: 10:d5:eb:4a:71:d6:d2:fe:b1:1c:a1:19:af:f3:3f:62:8b:db:51:45	

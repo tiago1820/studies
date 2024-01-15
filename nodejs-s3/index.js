@@ -1,7 +1,6 @@
 import express from "express";
 import fileUpload from "express-fileupload";
-import { uploadFile, getFiles } from "./s3.js";
-
+import { uploadFile, getFiles, getFile } from "./s3.js";
 
 const app = express();
 
@@ -13,6 +12,11 @@ app.use(fileUpload({
 app.get("/files", async (req, res) => {
     const result = await getFiles();
     res.json(result.Contents);
+});
+
+app.get("/files/:fileName", async (req, res) => {
+    const result = await getFile(req.params.fileName);
+    res.json(result);
 });
 
 app.post("/files", async (req, res) => {

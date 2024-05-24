@@ -1,0 +1,87 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+
+.container {
+    display: grid;
+    grid-gap: 1px;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    grid-template-rows: 47% 14% 39%;
+    background-color: #fff;
+    color: #444;
+    width: 60%;
+    height: 25rem;
+}
+
+.box {
+    background-color: aliceblue;
+    color: #fff;
+    font-size: 150%;
+}
+
+.a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+.container-img {
+    border: 1px solid red;
+    height: 80%;
+    width: 80%;
+    background-image: url("user.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.b {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    grid-column: 2 / 4;
+    grid-row: 1 / 2;
+
+}
+
+.password-container {
+    display: flex;
+    justify-content: center;
+    background-color: pink;
+    width: 90%;
+    margin-bottom: 1rem;
+}
+
+.password {
+    height: 1.5rem;
+    width: 100%;
+}
+
+.c {
+    background-color: rgb(6, 45, 136);
+    grid-column: 1 / 4;
+    grid-row: 2 / 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.d {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+}
+
+.e {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+}
+
+.f {
+    grid-column: 3 / 4;
+    grid-row: 3 / 4;
+}

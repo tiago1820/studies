@@ -1,0 +1,44 @@
+@media screen and (max-width: 1115px) {
+    button {
+        font-size: 0.69rem;
+    }
+}
+
+@media screen and (max-width: 711px) {
+    .container {
+        width: 38%;
+        height: 10rem;
+    }
+
+    .container-img {
+        width: 50%;
+        height: 50%;
+    }
+
+    button {
+        font-size: 0.29rem;
+        height: 1.3rem;
+    }
+
+    .user {
+        margin-bottom: 0.2rem;
+        color: #444;
+        font-weight: bold;
+        font-size: 0.8rem;
+    }
+
+    .password {
+        height: 1.5rem;
+        margin-bottom: 1.3rem;
+    }
+
+    .password input {
+        height: 69%;
+        width: 93%;
+        border-radius: 0.4rem;
+    }
+
+    .c {
+        font-size: 0.6rem;
+    }
+}

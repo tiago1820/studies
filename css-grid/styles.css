@@ -1,25 +1,39 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 body {
     display: flex;
-    align-items: center;
     justify-content: center;
-    background-color: black;
+    background-image: url("ubuntu-24.04-wallpaper.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .container {
     display: grid;
-    grid-gap: 1px;
-    grid-template-columns: 33.33% 33.33% 33.33%;
-    grid-template-rows: 47% 14% 39%;
-    background-color: #fff;
+    grid-template-columns: repeat(3, 33.33%);
+    grid-template-rows: 60% 14% 26%;
     color: #444;
-    width: 60%;
-    height: 25rem;
+    width: 40%;
+    height: 18rem;
+    margin-top: 10%;
 }
 
-.box {
-    background-color: aliceblue;
-    color: #fff;
-    font-size: 150%;
+.a,
+.b,
+.c {
+    background-color: #FDFDFD;
+}
+
+.d,
+.e,
+.f {
+    background-color: #CDCFCE;
+    display: flex;
+    align-items: center;
 }
 
 .a {
@@ -28,60 +42,100 @@ body {
     justify-content: center;
     grid-column: 1 / 2;
     grid-row: 1 / 2;
+    border-top-left-radius: 0.3rem;
 }
+
 .container-img {
-    border: 1px solid red;
-    height: 80%;
-    width: 80%;
+    border: 0.15rem solid #949393;
+    border-top: 0.15rem solid #3a3939;
+    height: 70%;
+    width: 70%;
     background-image: url("user.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    border-radius: 0.4rem;
 }
 
 .b {
     display: flex;
-    justify-content: center;
-    align-items: end;
+    flex-direction: column;
+    justify-content: flex-end;
     grid-column: 2 / 4;
     grid-row: 1 / 2;
-
+    border-top-right-radius: 0.3rem;
 }
 
-.password-container {
-    display: flex;
-    justify-content: center;
-    background-color: pink;
-    width: 90%;
-    margin-bottom: 1rem;
+.user {
+    margin-bottom: 0.5rem;
+    color: #444;
+    font-weight: bold;
 }
 
 .password {
-    height: 1.5rem;
-    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    height: 2rem;
+    margin-bottom: 2rem;
+}
+
+.password input {
+    height: 99%;
+    width: 93%;
+    border-radius: 0.4rem;
 }
 
 .c {
-    background-color: rgb(6, 45, 136);
+    background-color: #368ADF;
     grid-column: 1 / 4;
     grid-row: 2 / 3;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-repeat: no-repeat;
-    background-position: center center;
+    font-size: 1.1rem;
+    color: #fff;
 }
 
 .d {
     grid-column: 1 / 2;
     grid-row: 3 / 4;
+    border-bottom-left-radius: 0.3rem;
+    justify-content: flex-end;
 }
 
 .e {
     grid-column: 2 / 3;
     grid-row: 3 / 4;
+    justify-content: center;
 }
 
 .f {
     grid-column: 3 / 4;
     grid-row: 3 / 4;
+    border-bottom-right-radius: 0.3rem;
+    justify-content: flex-start;
+}
+
+button {
+    color: #444242;
+    font-weight: bold;
+    padding: 0.5rem 0.8rem;
+    width: 89%;
+    border-radius: 0.4rem;
+    height: 2.3rem;
+    border: 0.1rem solid #949393;
+    border-top: 0.1rem solid #fff;
+    transition: transform 0.1s ease-in-out, border 0.1s ease-in-out;
+}
+
+button:active {
+    transform: scale(0.95);
+    border-top: 0.1rem solid #949393;
+    border-left: 0.1rem solid #959393;
+    border-bottom: 0.1rem solid #fff;
+    border-right: 0.1rem solid #fff;
+}
+
+.f button {
+    background-color: #368ADF;
+    color: #fff;
 }

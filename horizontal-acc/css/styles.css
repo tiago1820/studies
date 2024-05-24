@@ -8,19 +8,19 @@
 }
 
 .container {
-    max-width: 900px;
-    margin: 50px auto;
-    padding: 0 20px;
+    width: 100%;
+    height: 100vh;
 }
+
 .slides {
     width: 100%;
     display: flex;
-    border-radius: 10px;
     overflow: hidden;
 }
+
 .slide {
     list-style-type: none;
-    min-height: 400px;
+    height: 100vh;
     width: 5%;
     overflow: hidden;
 
@@ -28,7 +28,10 @@
 }
 
 .brand1 {
-    background-color: #db65e5;
+    background-image: url('https://cdn.pixabay.com/photo/2017/11/02/00/34/parrot-2909828_1280.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .brand2 {
@@ -38,12 +41,15 @@
 .brand3 {
     background-color: #6200b3;
 }
+
 .brand4 {
     background-color: #3b0086;
 }
+
 .brand5 {
     background-color: #290628;
 }
+
 .slide a.action {
     display: block;
     height: 100%;
@@ -60,6 +66,7 @@
     left: -30%;
     height: 100px;
 }
+
 .slide-content {
     display: block;
     width: 710px;
@@ -70,6 +77,32 @@
 .active {
     width: 80%;
 }
-.active a.action{
+
+.active a.action {
     display: none;
+}
+
+.gallery {
+    max-height: 100%;
+    overflow-y: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+    grid-gap: 5px;
+    padding: 2rem;
+}
+
+.card {
+    border-radius: 5px;
+    overflow: hidden;
+    padding: 8px;
+    background-color: white;
+    color: #555;
+}
+
+.card-img {
+    border-radius: 5px;
+    width: 100%;
+    height: 200px;
+    max-height: 200px;
+    object-fit: cover;
 }
